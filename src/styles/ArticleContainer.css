@@ -1,0 +1,10 @@
+.article-container {
+  width: 35%;
+  display: grid;
+  grid-template-columns: repeat(1, 25rem);
+  grid-gap: 0.7rem;
+  border: 1px solid grey;
+  top: 50%;
+  left: 50%;
+  border: 1px dotted grey;
+}
