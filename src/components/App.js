@@ -30,7 +30,7 @@ function App() {
       <div className="content">
         <ArticleContainer 
         articles={articles} setDisplayArticle={setDisplayArticle} />
-        {displayArticle ? <DetailDisplay displayArticle={displayArticle} /> : null}
+        {/* {displayArticle ? <DetailDisplay displayArticle={displayArticle} /> : null} */}
       </div>
     </div>
   );
