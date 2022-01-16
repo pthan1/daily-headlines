@@ -1,21 +1,22 @@
 .article-display {
   width: 100%;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-top: 2rem;
+  flex-direction: ;
+  justify-content: center;
+  margin-top: 1rem 0rem;
+  margin-bottom: 1rem;
 }
 
-img {
+/* img {
   width: 100%;
-}
+} */
 
-.left {
+/* .left {
   width: 40%;
-}
+} */
 
 .right {
-  width: 60%;
+  width: 80%;
   padding-top: 2rem;
   padding-left: 2rem;
 }

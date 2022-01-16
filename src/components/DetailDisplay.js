@@ -5,9 +5,9 @@ const DetailDisplay = ({abstract, byline, pubished_date, image_url}) => {
 
   return (
     <div className="article-display">
-      <div className="left">
+      {/* <div className="left">
         <img src={image_url} alt="image" />
-      </div>
+      </div> */}
       <div className="right">
       <hr />
         {byline} <br /> <br />

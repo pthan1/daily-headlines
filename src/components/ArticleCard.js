@@ -15,6 +15,8 @@ const ArticleCard = ({id, title, abstract, byline, published_date, image_url}) =
     <div className="article-card">
       <h2>{title}</h2>
       <br /> 
+      <img src={image_url} alt="image" />
+      <br />
       <button onClick={(e) => {
         e.preventDefault();
         handleClick(id);

@@ -1,13 +1,11 @@
 import { useEffect, useState } from 'react';
 import '../styles/App.css';
-import SectionSelect from './SectionSelect';
 import ArticleContainer from './ArticleContainer';
-import DetailDisplay from './DetailDisplay';
 
 function App() {
   const [articles, setArticles] = useState([]);
   const [sections, setSections] = useState([]);
-  const [filter, setFilter] = useState('');
+  const [filtered, setFiltered] = useState();
   // const [displayArticle, setDisplayArticle] = useState({});
    
   
@@ -31,20 +29,32 @@ function App() {
       }
       });
       setSections(articleSelections);
-      console.log(sections)
 
-  
     setArticles(articleKeys);
-    console.log(articleKeys)
-  });
-
-
+  }, []);
 
 
   }, [])
+  const selectOptions = sections.map(section => {return <option value={section}>{section}</option>})
 
-  const handleFilter = (value) => {
+  const handleFilter = (e) => {
+    
+    
+    if (e.target.value !== 'all') { 
+      let filtered;
+      console.log('value', e.target.value);
+      filtered = articles.filter(article => {
+      return article.section === e.target.value;
+    })
+    setFiltered(filtered);
+    return filtered;
+  }
+  if (e.target.value === 'all') {  
+    setFiltered();
+    return articles;
+  }
 
+    
   };
 
 
@@ -52,10 +62,14 @@ function App() {
   return (
     <div className="landing-page">
       <h1>Daily Headlines</h1>
-      <select name="sections" id="sections" onChange={value => handleFilter(value)}></select><br />
+      <label for="sections">Filter by Section: </label> 
+      <select name="sections" id="sections" onChange={handleFilter} defaultValue="all">
+       <option value="all">Show All</option> 
+            {selectOptions}</select><br />
+            
       <div className="content">
         <ArticleContainer 
-        articles={articles}
+        articles={!filtered ? articles : filtered}
         />
       </div>
     </div>
