@@ -2,18 +2,16 @@ import { useEffect, useState } from 'react';
 import '../styles/App.css';
 import ArticleContainer from './ArticleContainer';
 
+const {REACT_APP_API_KEY} = process.env;
+
 function App() {
   const [articles, setArticles] = useState([]);
   const [sections, setSections] = useState([]);
   const [filtered, setFiltered] = useState();
-  // const [displayArticle, setDisplayArticle] = useState({});
-   
-  
-
-
 
     useEffect(() => {
-    fetch(`https://api.nytimes.com/svc/topstories/v2/home.json?api-key=2ehzLoKkCXtF2lzzbaK2MCq8En9hZaNA`)
+      console.log(REACT_APP_API_KEY)
+    fetch(`https://api.nytimes.com/svc/topstories/v2/home.json?api-key=${REACT_APP_API_KEY}`)
   .then(response => {
     if (!response.ok) {
       throw new Error(`Status: ${response.status}`)

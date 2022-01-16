@@ -6,12 +6,11 @@ const ArticleCard = ({id, title, abstract, byline, published_date, image_url}) =
   const [displayToggle, setDisplayToggle] = useState(false);
 
 
-  const handleClick = (clickedId) => {
+  const handleClick = () => {
     setDisplayToggle(!displayToggle);
   }
 
   return (
-    // <>CARD</>
     <div className="article-card">
       <h2>{title}</h2>
       <br /> 
@@ -19,7 +18,7 @@ const ArticleCard = ({id, title, abstract, byline, published_date, image_url}) =
       <br />
       <button onClick={(e) => {
         e.preventDefault();
-        handleClick(id);
+        handleClick();
       }}> {displayToggle ? 'Collapse' : 'Read More'} </button>
     {displayToggle ? <DetailDisplay abstract={abstract}
     byline={byline}
