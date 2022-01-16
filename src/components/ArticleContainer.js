@@ -18,8 +18,7 @@ const ArticleContainer = ({articles}) => {
           byline={result.byline}
           published_date={result.published_date}
           image_url={result.multimedia[0].url}
-          // displayArticle={displayArticle}
-          articles={articles}
+          short_url={result.short_url}
           />
   })
 

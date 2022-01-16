@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import '../styles/ArticleCard.css';
 import DetailDisplay from './DetailDisplay';
 
-const ArticleCard = ({id, title, abstract, byline, published_date, image_url}) => {
+const ArticleCard = ({id, title, abstract, byline, published_date, image_url, short_url}) => {
   const [displayToggle, setDisplayToggle] = useState(false);
 
 
@@ -24,6 +24,7 @@ const ArticleCard = ({id, title, abstract, byline, published_date, image_url}) =
     byline={byline}
     published_date={published_date}
     image_url={image_url}
+    short_url={short_url}
      /> : null}
     </div>
   )

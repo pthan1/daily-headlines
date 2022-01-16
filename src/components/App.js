@@ -10,7 +10,6 @@ function App() {
   const [filtered, setFiltered] = useState();
 
     useEffect(() => {
-      console.log(REACT_APP_API_KEY)
     fetch(`https://api.nytimes.com/svc/topstories/v2/home.json?api-key=${REACT_APP_API_KEY}`)
   .then(response => {
     if (!response.ok) {
@@ -29,6 +28,7 @@ function App() {
       setSections(articleSelections);
 
     setArticles(articleKeys);
+    console.log(articles)
   }, []);
 
 
@@ -40,7 +40,6 @@ function App() {
     
     if (e.target.value !== 'all') { 
       let filtered;
-      console.log('value', e.target.value);
       filtered = articles.filter(article => {
       return article.section === e.target.value;
     })
@@ -51,8 +50,6 @@ function App() {
     setFiltered();
     return articles;
   }
-
-    
   };
 
 
@@ -60,11 +57,10 @@ function App() {
   return (
     <div className="landing-page">
       <h1>Daily Headlines</h1>
-      <label for="sections">Filter by Section: </label> 
+      <label>Filter by Section: </label> 
       <select name="sections" id="sections" onChange={handleFilter} defaultValue="all">
        <option value="all">Show All</option> 
             {selectOptions}</select><br />
-            
       <div className="content">
         <ArticleContainer 
         articles={!filtered ? articles : filtered}
