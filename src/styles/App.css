@@ -4,6 +4,12 @@
   flex-direction: column;
 }
 
+h1 {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 62px;
+  text-decoration: underline red;
+}
+
 .content {
   width: 75%;
 }

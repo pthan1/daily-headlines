@@ -9,7 +9,8 @@ const DetailDisplay = ({abstract, byline, pubished_date, image_url}) => {
         <img src={image_url} alt="image" />
       </div>
       <div className="right">
-        {byline} <br />
+      <hr />
+        {byline} <br /> <br />
         {abstract}<br />
         {pubished_date}
       </div>

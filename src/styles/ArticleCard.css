@@ -4,8 +4,19 @@
   width: 100%;
   margin-bottom: 20px;
   border: 1px solid grey;
+  justify-content: center;
+  align-items: center;
 }
 
 h2 {
   font-size: 95%;
+}
+
+button {
+    text-decoration: underline red;
+    color: black;
+    font: bold;
+    font-weight: 500;
+    background-color: lightgreen;
+    width: 500px;
 }

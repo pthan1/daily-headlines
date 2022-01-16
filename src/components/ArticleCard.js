@@ -19,7 +19,6 @@ const ArticleCard = ({id, title, abstract, byline, published_date, image_url}) =
         e.preventDefault();
         handleClick(id);
       }}> {displayToggle ? 'Collapse' : 'Read More'} </button>
-
     {displayToggle ? <DetailDisplay abstract={abstract}
     byline={byline}
     published_date={published_date}
