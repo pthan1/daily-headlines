@@ -1,28 +1,30 @@
-import React from 'react'
-// import './ArticleCard.css'
-// import { addRepo } from '../apiCalls'
-// import { SearchContext } from '../context/SearchContext'
+import React, {useState} from 'react'
+import '../styles/ArticleCard.css';
+import DetailDisplay from './DetailDisplay';
 
-const ArticleCard = ({id, title, setDisplayArticle, abstract, byline, published_date, image_url}) => {
+const ArticleCard = ({id, title, abstract, byline, published_date, image_url}) => {
+  const [displayToggle, setDisplayToggle] = useState(false);
 
-  const handleClick = (e) => {
-    e.preventDefault();
-    const displayArticle = {
-      title,
-      abstract,
-      byline,
-      published_date,
-      image_url
-    }
 
-    setDisplayArticle(displayArticle);
+  const handleClick = (clickedId) => {
+    setDisplayToggle(!displayToggle);
   }
 
   return (
     // <>CARD</>
-    <div className="repo-card">
-      {title}
-      <button onClick={(e) => handleClick(e)}>Read More</button>
+    <div className="article-card">
+      <h2>{title}</h2>
+      <br /> 
+      <button onClick={(e) => {
+        e.preventDefault();
+        handleClick(id);
+      }}> {displayToggle ? 'Collapse' : 'Read More'} </button>
+
+    {displayToggle ? <DetailDisplay abstract={abstract}
+    byline={byline}
+    published_date={published_date}
+    image_url={image_url}
+     /> : null}
     </div>
   )
 }

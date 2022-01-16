@@ -3,8 +3,8 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  border: 1px solid grey;
-  top: 50%;
-  left: 50%;
-  border: 1px dotted grey;
+  /* border: 1px solid grey; */
+  /* top: 50%;
+  left: 50%; */
+  /* border: 1px dotted grey; */
 }

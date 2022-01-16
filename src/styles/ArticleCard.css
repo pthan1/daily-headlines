@@ -1,0 +1,11 @@
+.article-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 20px;
+  border: 1px solid grey;
+}
+
+h2 {
+  font-size: 95%;
+}

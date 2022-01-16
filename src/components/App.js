@@ -6,7 +6,7 @@ import DetailDisplay from './DetailDisplay';
 
 function App() {
   const [articles, setArticles] = useState([]);
-  const [displayArticle, setDisplayArticle] = useState({});
+  // const [displayArticle, setDisplayArticle] = useState({});
 
     useEffect(() => {
     fetch(`https://api.nytimes.com/svc/topstories/v2/home.json?api-key=2ehzLoKkCXtF2lzzbaK2MCq8En9hZaNA`)
@@ -29,8 +29,10 @@ function App() {
       <h1>Daily Headlines</h1>
       <div className="content">
         <ArticleContainer 
-        articles={articles} setDisplayArticle={setDisplayArticle} />
-        {/* {displayArticle ? <DetailDisplay displayArticle={displayArticle} /> : null} */}
+        articles={articles} 
+        // setDisplayArticle={setDisplayArticle} 
+        // displayArticle={displayArticle}
+        />
       </div>
     </div>
   );
