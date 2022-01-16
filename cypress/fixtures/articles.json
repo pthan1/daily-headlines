@@ -1,0 +1,134 @@
+{
+  "results": [
+    [
+      {
+        "section": "health",
+        "subsection": "",
+        "title": "Halting Progress and Happy Accidents: How mRNA Vaccines Were Made",
+        "abstract": "The stunning Covid vaccines manufactured by Pfizer-BioNTech and Moderna drew upon long-buried discoveries made in the hopes of ending past epidemics.",
+        "url": "https://www.nytimes.com/2022/01/15/health/mrna-vaccine.html",
+        "uri": "nyt://article/bb04830d-d59b-52ee-9508-39e94e675cb7",
+        "byline": "By Gina Kolata and Benjamin Mueller",
+        "item_type": "Article",
+        "updated_date": "2022-01-15T23:59:23-05:00",
+        "created_date": "2022-01-15T09:20:32-05:00",
+        "published_date": "2022-01-15T09:20:32-05:00",
+        "material_type_facet": "",
+        "kicker": "",
+        "des_facet": [
+          "Clinical Trials",
+          "Coronavirus (2019-nCoV)",
+          "Vaccination and Immunization",
+          "MERS (Middle East Respiratory Syndrome)",
+          "Acquired Immune Deficiency Syndrome",
+          "your-feed-science"
+        ],
+        "org_facet": [
+          "National Institutes of Health"
+        ],
+        "per_facet": [
+          "Graham, Barney S (1953- )",
+          "Kariko, Katalin (1955- )",
+          "Fauci, Anthony S",
+          "Weissman, Drew (1961- )"
+        ],
+        "geo_facet": [],
+        "multimedia": [
+          {
+            "url": "https://static01.nyt.com/images/2021/12/01/science/00VIRUS-mRNA-promo/00VIRUS-mRNA-promo-superJumbo.jpg",
+            "format": "superJumbo",
+            "height": 1365,
+            "width": 2048,
+            "type": "image",
+            "subtype": "photo",
+            "caption": "A 3-D plaster model of a coronavirus spike protein in the office of Dr. Barney Graham of the Vaccine Research Center of the National Institutes of Health.",
+            "copyright": "Johnathon Kelso for The New York Times"
+          }
+        ],
+        "short_url": "https://nyti.ms/3fuht0S",
+        "key": 0
+      },
+      {
+        "section": "nyregion",
+        "subsection": "",
+        "title": "What the Omicron Wave Looks Like at One Brooklyn E.R.",
+        "abstract": "The nature of this variant, combined with widespread vaccine use, may make it seem less severe in some ways than earlier ones. It doesn’t always feel like that here.",
+        "url": "https://www.nytimes.com/2022/01/15/nyregion/brooklyn-omicron-cases.html",
+        "uri": "nyt://article/9ebbd476-2108-57bb-b616-4f1022966f16",
+        "byline": "By Joseph Goldstein",
+        "item_type": "Article",
+        "updated_date": "2022-01-16T00:17:51-05:00",
+        "created_date": "2022-01-15T05:00:17-05:00",
+        "published_date": "2022-01-15T05:00:17-05:00",
+        "material_type_facet": "",
+        "kicker": "",
+        "des_facet": [
+          "Coronavirus Risks and Safety Concerns",
+          "Coronavirus (2019-nCoV)",
+          "Hospitals",
+          "Emergency Medical Treatment"
+        ],
+        "org_facet": [
+          "Brooklyn Hospital Center",
+          "New York State Nurses' Assn"
+        ],
+        "per_facet": [],
+        "geo_facet": [
+          "Brooklyn (NYC)"
+        ],
+        "multimedia": [
+          {
+            "url": "https://static01.nyt.com/images/2022/01/16/nyregion/00nyvirus-brooklynhospital2/00nyvirus-brooklynhospital2-superJumbo.jpg",
+            "format": "superJumbo",
+            "height": 1365,
+            "width": 2048,
+            "type": "image",
+            "subtype": "photo",
+            "caption": "",
+            "copyright": "Victor J. Blue for The New York Times"
+          }
+        ],
+        "short_url": "https://nyti.ms/3nwJ1qD",
+        "key": 1
+      },
+      {
+        "section": "nyregion",
+        "subsection": "",
+        "title": "Woman Dies After Being Pushed Onto Subway Tracks in Times Square",
+        "abstract": "The police said Michelle Go, 40, of Manhattan, was shoved in front of an R train as it approached a 42nd Street platform in Manhattan on Saturday morning.",
+        "url": "https://www.nytimes.com/2022/01/15/nyregion/woman-pushed-on-train-death.html",
+        "uri": "nyt://article/3585eb78-fffe-58a1-bf9a-c6a82df8ce3d",
+        "byline": "By Troy Closson and Andy Newman",
+        "item_type": "Article",
+        "updated_date": "2022-01-16T00:04:05-05:00",
+        "created_date": "2022-01-15T13:05:08-05:00",
+        "published_date": "2022-01-15T13:05:08-05:00",
+        "material_type_facet": "",
+        "kicker": "",
+        "des_facet": [
+          "Subways",
+          "Murders, Attempted Murders and Homicides"
+        ],
+        "org_facet": [],
+        "per_facet": [],
+        "geo_facet": [
+          "Times Square and 42nd Street (Manhattan, NY)"
+        ],
+        "multimedia": [
+          {
+            "url": "https://static01.nyt.com/images/2022/01/15/nyregion/15shoving3/merlin_200386215_748d1dd5-6fcf-41b0-b307-b18a157ad61e-superJumbo.jpg",
+            "format": "superJumbo",
+            "height": 1366,
+            "width": 2048,
+            "type": "image",
+            "subtype": "photo",
+            "caption": "The scene at the Times Square station in Manhattan, where a woman was struck and killed by an R train on Saturday.",
+            "copyright": "Jeenah Moon for The New York Times"
+          }
+        ],
+        "short_url": "https://nyti.ms/33kmAhz",
+        "key": 2
+      }
+    ]
+  ]
+}

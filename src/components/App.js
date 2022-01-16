@@ -28,9 +28,9 @@ function App() {
       setSections(articleSelections);
 
     setArticles(articleKeys);
-    console.log(articles)
-  }, []);
 
+  }, []);
+    console.log(articles);
 
   }, [])
   const selectOptions = sections.map(section => {return <option value={section}>{section}</option>})
