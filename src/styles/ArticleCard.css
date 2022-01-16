@@ -13,10 +13,10 @@ h2 {
 }
 
 button {
-    text-decoration: underline red;
+    /* text-decoration: undrline red; */
     color: black;
     font: bold;
     font-weight: 500;
-    background-color: lightgreen;
-    width: 500px;
+    background-color: greenyellow;
+    width: 50%;
 }

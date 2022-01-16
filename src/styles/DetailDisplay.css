@@ -7,7 +7,7 @@
 }
 
 img {
-  width: 25rem;
+  width: 100%;
 }
 
 .left {
@@ -15,11 +15,14 @@ img {
 }
 
 .right {
+  width: 60%;
   padding-top: 2rem;
   padding-left: 2rem;
 }
 
 hr {
-height: 5px;
-        background-color: red;
-        border: none;}
+  height: 5px;
+  width: 100%;
+  background-color: red;
+  border: none;
+}
