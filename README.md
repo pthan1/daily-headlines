@@ -16,7 +16,11 @@ Mod 4 Take-Home Challenge Project
 
 ## Abstract
 
-This application consumes takes the New York Times' (NYT) main page and displays all of it's headlines in a minimlistic, easy-to-consume format.   
+This project was a Take Home Challenge from Turing School of Software & Design.
+
+This application consumes takes the New York Times' (NYT) main page and displays all of it's headlines in a minimlistic, easy-to-consume format.  If users want to read the full article, there is a link to each article in the article's expanded detail view.
+
+Users are able to sort the articles by sections.  
 
 ## Technologies
 
